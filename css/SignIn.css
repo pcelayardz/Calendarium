@@ -1,0 +1,172 @@
+:root {
+    --colorLetra: #EEEBE4;
+    --colorHeader: #87B297;
+    --WireOne: 'Wire One', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --ConcertOne: 'Concert One', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+/** HEADER */
+.header {
+    background-color: var(--colorHeader);
+}
+
+.imagenHeader {
+    visibility: hidden;
+}
+
+.tituloHeader {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-family: var(--WireOne);
+    font-size: 120px;
+    font-weight: 100;
+    color: var(--colorLetra);
+}
+
+@media (min-width:767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 40px;
+    }
+
+    .imagenHeader {
+        grid-column: 1 / 2;
+        margin-left: 20%;
+        visibility: visible;
+    }
+
+    .tituloHeader {
+        position: unset;
+        margin-top: 20px;
+        grid-column: 2 / 3;
+        font-family: var(--WireOne);
+        font-size: 120px;
+        font-weight: 100;
+        color: #EEEBE4;
+    }
+}
+
+/** MAIN */
+
+.principal {
+    background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 40% 95%;
+    text-align: center;
+    height: 80vh;
+}
+
+h2{
+    display: block;
+    font-family: var(--ConcertOne);
+    color: #B592A0;
+    font-size: 40px !important;
+    margin: 0% 0% 5% 0% !important;
+    text-align: center;
+    padding-top: 5%;
+}
+input[type=email] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    margin: 5% auto 5% auto;
+}
+input[type=password] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    margin: 5% auto 5% auto;
+}
+.input-text::placeholder{
+    font-family: var(--roboto);   
+}
+input[type=submit] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    font-family: var(--roboto);   
+    background-color: var(--colorHeader);
+    color: white;
+    margin: 5% auto 10% auto;
+}
+
+@media (min-width: 767px) {
+    .principal {
+        background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: 40% 95%;
+        text-align: center;
+        height: 90vh;
+    }
+    .formulario{
+        background-color: #fefefe;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 30%;
+        text-align: center;
+        width: 50%;
+        border-radius: 3%;
+    }
+    h2{
+        display: block;
+        font-family: var(--ConcertOne);
+        color: #B592A0;
+        font-size: 60px !important;
+        margin: 0% 0% 5% 0% !important;
+    }
+    input[type=email] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        margin: 5% auto 5% auto;
+    }
+    input[type=password] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        margin: 5% auto 5% auto;
+    }
+    .input-text::placeholder{
+        font-family: var(--roboto);   
+    }
+    input[type=submit] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        font-family: var(--roboto);   
+        background-color: var(--colorHeader);
+        color: white;
+        margin: 5% auto 10% auto;
+    }
+    
+}

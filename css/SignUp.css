@@ -1,0 +1,136 @@
+:root {
+    --colorLetra: #EEEBE4;
+    --colorHeader: #87B297;
+    --WireOne: 'Wire One', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+/** HEADER */
+.header {
+    background-color: var(--colorHeader);
+}
+
+.imagenHeader {
+    visibility: hidden;
+}
+
+.tituloHeader {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-family: var(--WireOne);
+    font-size: 120px;
+    font-weight: 100;
+    color: var(--colorLetra);
+}
+
+@media (min-width:767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 40px;
+    }
+
+    .imagenHeader {
+        grid-column: 1 / 2;
+        margin-left: 20%;
+        visibility: visible;
+    }
+
+    .tituloHeader {
+        position: unset;
+        margin-top: 20px;
+        grid-column: 2 / 3;
+        font-family: var(--WireOne);
+        font-size: 120px;
+        font-weight: 100;
+        color: #EEEBE4;
+    }
+}
+
+/** MAIN */
+
+@media (min-width: 767px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    .slogan {
+        grid-column: 1 / 2;
+        background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+        background-position: 40% 95%;
+        height: 90vh;
+    }
+
+    .formulario {
+        grid-column: 2 / 3;
+    }
+
+    .frase1 {
+        font-family: var(--WireOne);
+        font-weight: 100;
+        font-size: 100px;
+        margin-top: 20%;
+        padding-left: 10%;
+    }
+
+    .frase2 {
+        font-family: var(--WireOne);
+        font-size: 100px;
+        margin-bottom: 45%;
+        padding-left: 20%;
+        font-weight: 100;
+    }
+
+    .frase3 {
+        font-family: var(--roboto);
+        font-size: 30px;
+        text-align: center;
+        margin: 40% 10% 0% 10%;
+    }
+
+    .frase4 {
+        font-family: var(--roboto);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    a{
+        color: black;
+        text-decoration-color: #87B297;
+    }
+    input[type=email] {
+        width: 70%;
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 5% 0% 0% 12%;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        text-align: center;
+    }
+    .input-text::placeholder{
+        font-family: var(--roboto);   
+    }
+    input[type=submit] {
+        width: 79%;
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 5% 0% 5% 12%;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        font-family: var(--roboto);   
+        background-color: var(--colorHeader);
+        color: white;
+    }
+    
+}
+
+
+

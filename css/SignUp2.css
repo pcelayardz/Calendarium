@@ -1,0 +1,325 @@
+:root {
+    --colorLetra: #EEEBE4;
+    --colorHeader: #87B297;
+    --WireOne: 'Wire One', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --ConcertOne: 'Concert One', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+/** HEADER */
+.header {
+    background-color: var(--colorHeader);
+}
+
+.imagenHeader {
+    visibility: hidden;
+}
+
+.tituloHeader {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-family: var(--WireOne);
+    font-size: 120px;
+    font-weight: 100;
+    color: var(--colorLetra);
+}
+
+@media (min-width:767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 40px;
+    }
+
+    .imagenHeader {
+        grid-column: 1 / 2;
+        margin-left: 20%;
+        visibility: visible;
+    }
+
+    .tituloHeader {
+        position: unset;
+        margin-top: 20px;
+        grid-column: 2 / 3;
+        font-family: var(--WireOne);
+        font-size: 120px;
+        font-weight: 100;
+        color: #EEEBE4;
+    }
+}
+
+/** MAIN */
+
+.principal {
+    background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 40% 95%;
+    text-align: center;
+    height: 80vh;
+}
+
+h2{
+    display: block;
+    font-family: var(--ConcertOne);
+    color: #B592A0;
+    font-size: 60px !important;
+    margin: 0% 0% 5% 0% !important;
+    padding-top: 2%;
+}
+input[type=email] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    margin: 5% auto 5% auto;
+}
+input[type=text] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    margin: 5% auto 5% auto;
+}
+input[type=password] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    margin: 5% auto 5% auto;
+}
+.input-text::placeholder{
+    font-family: var(--roboto);   
+}
+input[type=submit] {
+    width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    font-family: var(--roboto);   
+    background-color: var(--colorHeader);
+    color: white;
+    margin: 5% auto 10% auto;
+}
+
+.aceptar {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .aceptar input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 9%;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .aceptar:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .aceptar input:checked ~ .checkmark {
+    background-color: #B592A0;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .aceptar input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .aceptar .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+@media (min-width: 767px) {
+    .principal {
+        background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: 40% 95%;
+        text-align: center;
+        height: 100vh;
+    }
+    .formulario{
+        background-color: #fefefe;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 30%;
+        text-align: center;
+        width: 50%;
+        border-radius: 3%;
+        font-family: var(--roboto);
+    }
+    h2{
+        display: block;
+        font-family: var(--ConcertOne);
+        color: #B592A0;
+        font-size: 60px !important;
+        margin: 0% 0% 5% 0% !important;
+        padding-top: 5%;
+    }
+    input[type=email] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        margin: 5% auto 5% auto;
+    }
+    input[type=text] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        margin: 5% auto 5% auto;
+    }
+    input[type=password] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        margin: 5% auto 5% auto;
+    }
+    .input-text::placeholder{
+        font-family: var(--roboto);   
+    }
+    input[type=submit] {
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        font-family: var(--roboto);   
+        background-color: var(--colorHeader);
+        color: white;
+        margin: 5% auto 10% auto;
+    }
+
+    .aceptar {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default checkbox */
+      .aceptar input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 17%;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .aceptar:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .aceptar input:checked ~ .checkmark {
+        background-color: #B592A0;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      .aceptar input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      .aceptar .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    
+}
