@@ -56,12 +56,12 @@
 /** MAIN */
 
 .principal {
-    background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+    background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 40% 95%;
     text-align: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 h2{
@@ -184,7 +184,7 @@ input[type=submit] {
 
 @media (min-width: 767px) {
     .principal {
-        background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+        background-image: url("../img/fondo.png");
         background-repeat: no-repeat;
         background-size:cover;
         background-position: 40% 95%;

@@ -53,18 +53,85 @@
 }
 
 /** MAIN */
+.principal {
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: 40% 95%;
+}
+
+.frase1 {
+    font-family: var(--WireOne);
+    font-weight: 100;
+    font-size: 70px;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.frase2 {
+    font-family: var(--WireOne);
+    font-size: 70px;
+    margin-bottom: 10%;
+    padding-left: 20%;
+    font-weight: 100;
+}
+
+.frase3 {
+    font-family: var(--roboto);
+    font-size: 30px;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+}
+
+.frase4 {
+    font-family: var(--roboto);
+    font-size: 20px;
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration-color: #87B297;
+}
+input[type=email] {
+    width: 70%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5% 0% 0% 12%;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    text-align: center;
+}
+.input-text::placeholder{
+    font-family: var(--roboto);   
+}
+input[type=submit] {
+    width: 79%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5% 0% 5% 12%;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    font-family: var(--roboto);   
+    background-color: var(--colorHeader);
+    color: white;
+}
 
 @media (min-width: 767px) {
     .principal {
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 58% 42%;
     }
 
     .slogan {
         grid-column: 1 / 2;
-        background-image: url("/Users/pcelayardz/Desktop/DAW/Calendarium/img/fondo.png");
+        background-image: url("../img/fondo.png");
         background-position: 40% 95%;
+        background-repeat: no-repeat;
         height: 90vh;
+        width: 110vh;
     }
 
     .formulario {
