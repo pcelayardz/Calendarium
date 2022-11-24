@@ -53,6 +53,7 @@
 }
 
 /** MAIN */
+
 .principal {
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
@@ -123,6 +124,7 @@ input[type=submit] {
     .principal {
         display: grid;
         grid-template-columns: 58% 42%;
+        background-image: none;
     }
 
     .slogan {

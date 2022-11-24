@@ -30,6 +30,9 @@
 }
 
 @media (min-width:767px) {
+    a{
+      text-decoration: none;
+    }
     .header {
         display: grid;
         grid-template-columns: 1fr 5fr;

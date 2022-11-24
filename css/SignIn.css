@@ -28,8 +28,10 @@
     font-weight: 100;
     color: var(--colorLetra);
 }
-
 @media (min-width:767px) {
+    a{
+        text-decoration: none !important;
+      }
     .header {
         display: grid;
         grid-template-columns: 1fr 5fr;
@@ -50,6 +52,7 @@
         font-size: 120px;
         font-weight: 100;
         color: #EEEBE4;
+        text-decoration: none;
     }
 }
 
