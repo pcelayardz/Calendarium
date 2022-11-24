@@ -2,6 +2,9 @@
     --colorLetra: #EEEBE4;
     --colorHeader: #87B297;
     --colorMenu:#A3C3AC;
+    --colorMes:#B592A0;
+    --colorEventos:#A30B37;
+    --colorTareas: #E87EA1;
     --WireOne: 'Wire One', sans-serif;
     --roboto: 'Roboto', sans-serif;
     --ConcertOne: 'Concert One', sans-serif;
@@ -64,7 +67,7 @@
         width: 100%;
     }
     /*Para poner la imagen del dropdown menu*/
-    span {
+    .menu{
         padding : 30px;
         background-image: url("../img/menu.png");
         background-size: 40px;
@@ -92,8 +95,70 @@
         background-color: var(--colorMenu);
     }
 
+    .slide li:hover{
+        background-color: var(--colorHeader);
+    }
     #touch {position: absolute; opacity: 0; height: 0px;}
 
     /*Con esto abrimos y cerramos el dropdwon menu*/
     #touch:checked + .slide {height: 150px;}
+
+}
+
+/** MAIN **/
+
+@media (min-width:767px) {
+    .principal{
+        background-color: #F4F4F4;
+        height: 85vh;
+        text-align: center;
+    }
+
+    #mes{
+        color: var(--colorMes);
+        font-family: var(--ConcertOne);
+        font-size: 60px;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    #semanal{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        background-color: var(--colorLetra);
+        border-radius: 5px;
+    }
+
+    th{
+        padding: 10px;
+    }
+    td{
+        height: 250px;
+        vertical-align: top;
+    }
+    td ul{
+        list-style: none;
+    }
+    li span{
+        width: 10%;
+    }
+    td #evento::before{
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: var(--colorEventos); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size: 30px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+    td #tarea::before{
+        content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: var(--colorTareas); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size: 10px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
 }
