@@ -17,21 +17,36 @@
         display: grid;
         grid-template-columns: 1fr 5fr;
         gap: 40px;
+        height: 15vh;
     }
     .imagenHeader {
         grid-column: 1 / 2;
         margin-left: 20%;
         visibility: visible;
+        width: 150px;
     }
     .tituloHeader {
         position: unset;
         margin-top: 20px;
         grid-column: 2 / 3;
         font-family: var(--WireOne);
-        font-size: 120px;
+        font-size: 100px;
         font-weight: 100;
         color: #EEEBE4;
         text-decoration: none;
+    }
+    .logout{
+        width: 170px;
+        padding: 5px 20px;
+        border: 1px solid #EEEBE4;
+        border-radius: 10px;
+        font-size:  20px;
+        font-family: var(--roboto);   
+        background-color: var(--colorMenu);
+        color: var(--colorLetra);
+        position: absolute;
+        top: 1%;
+        right: 1%;
     }
 
     /** Dropdown menu*/
@@ -43,7 +58,7 @@
         width : 190px; 
         position: absolute;
         right: 0px;
-        top: 20%;
+        top: 9%;
     }
     label{
         width: 100%;
