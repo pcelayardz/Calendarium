@@ -68,11 +68,20 @@
     <div class="action" onclick="actionToggle();">
       <span>+</span>
       <ul>
-        <li><a href="formCalendario.html">Calendario</a></li>
-        <li><a href="formHorario.html">Horario</a></li>
+        <li onclick="showFormCalendar()"><a href="#">Calendario</a></li>
+        <li><a href="">Horario</a></li>
       </ul>
     </div>
   </main>
+
+  <div id="formCalendario">
+    <form action="">
+        <h1 id="titulo">Añadir al calendario</h1>
+        <button type="button" id="evento" onclick="formEvento()">Evento</button>
+        <button type="button" id="tarea">Tarea</button>
+        <button type="button" id="cumple">Cumpleaños</button>
+    </form>
+  </div>
 </body>
 
 </html>

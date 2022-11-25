@@ -256,4 +256,37 @@
     .action ul li:not(:last-child) {
         border-bottom: 1px solid rgba(0,0,0,0.1);
     }
+
+    main{
+        z-index: 1;
+    }
+
+    /**Formulario para calendario**/
+    #formCalendario{
+        background-color: var(--colorLetra);
+        z-index: 2;
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    #titulo{
+        color: var(--colorMes);
+        font-family: var(--ConcertOne);
+        font-size: 60px;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    #evento:focus{
+        background-color: #87B297;
+    }
+    #tarea:focus{
+        background-color: #87B297;
+    }
+    #cumple:focus{
+        background-color: #87B297;
+    }
 }
