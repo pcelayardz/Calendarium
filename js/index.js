@@ -118,3 +118,8 @@ function mesToString(mes){
 
     return month;
 }
+
+function actionToggle() {
+    const action = document.querySelector('.action');
+    action.classList.toggle('active')
+}
