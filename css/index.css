@@ -11,12 +11,15 @@
 }
 
 /** HEADER **/
-.header {
+#header {
     background-color: var(--colorHeader);
 }
 
 @media (min-width:767px) {
-    .header {
+    #blur{
+        filter: blur(10px);
+    }
+    #header {
         display: grid;
         grid-template-columns: 1fr 5fr;
     }
@@ -106,10 +109,13 @@
 /** MAIN **/
 
 @media (min-width:767px) {
-    .principal{
+    .blur{
+        filter: blur(10px);
+    }
+    #principal{
         background-color: #F4F4F4;
-        height: 85vh;
         text-align: center;
+        padding-bottom: 8%;
     }
 
     #mes{
@@ -123,6 +129,16 @@
     #semanal{
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
+        background-color: var(--colorLetra);
+        border-radius: 5px;
+    }
+
+    #horario{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        padding-bottom: 5%;
         width: 80%;
         background-color: var(--colorLetra);
         border-radius: 5px;
@@ -263,9 +279,9 @@
 
     /**Formulario para calendario**/
     #formCalendario{
-        background-color: var(--colorLetra);
+        background-color: #F4F4F4;
         z-index: 2;
-        height: 80%;
+        height: 85%;
         width: 80%;
         position: absolute;
         top: 10%;
@@ -280,13 +296,63 @@
         padding-top: 1%;
     }
 
-    #evento:focus{
+    #cerrar{
+        padding: 5px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        font-family: var(--roboto);   
+        background-color: var(--colorMenu);
+        color: var(--colorLetra);
+        position: absolute;
+        top: 2%;
+        right: 2%;
+    }
+    #eventoBtn, #tareaBtn, #cumpleBtn{
+        width: 170px;
+        padding: 5px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        font-family: var(--roboto);   
+        background-color: var(--colorMenu);
+        color: var(--colorLetra);
+        margin: 5px;
+    }
+    #botones{
+        display: flex;
+        justify-content: center;
+    }
+    #eventoBtn:focus{
         background-color: #87B297;
     }
-    #tarea:focus{
+    #tareaBtn:focus{
         background-color: #87B297;
     }
-    #cumple:focus{
+    #cumpleBtn:focus{
         background-color: #87B297;
+    }
+
+    #nombreEvento, #horaEvento, #fechaEvento, #nombreTarea, #nombreCumple{
+        width: 70%;
+        display: block;
+        padding: 12px 20px;
+        border: 1px solid #87B297;
+        border-radius: 10px;
+        font-size:  20px;
+        margin: 5% auto 5% auto;
+    }
+
+    #enviarEvento, #enviarTarea, #enviarCumple{
+        width: 70%;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #87B297;
+    border-radius: 10px;
+    font-size:  20px;
+    font-family: var(--roboto);   
+    background-color: var(--colorHeader);
+    color: white;
+    margin: 5% auto 10% auto;
     }
 }

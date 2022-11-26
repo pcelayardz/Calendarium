@@ -19,12 +19,12 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="header">
     <img class="imagenHeader" src="img/logo.png" alt="logo">
     <h1 class="tituloHeader">Calendarium</h1>
     <a href="SignIn.html"><button type="submit" class="logout">Log out</button></a>
   </header>
-  <nav>
+  <nav id="navegacion">
     <!-- El for indica que pertenece a un input en concreto-->
     <label for="touch"><span class="menu"></span></label>
     <input type="checkbox" id="touch">
@@ -34,7 +34,7 @@
     </ul>
   </nav>
 
-  <main class="principal">
+  <main id="principal">
     <h1 id="mes"></h1>
     <table id="semanal">
       <tr>
@@ -65,6 +65,28 @@
       <td><ul></ul></td>
     </tr>
     </table>
+
+    <table id="horario">
+      <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sabado</th>
+        <th>Domingo</th>
+    </tr>
+    <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+    </tr>
+    </table>
+
     <div class="action" onclick="actionToggle();">
       <span>+</span>
       <ul>
@@ -77,9 +99,13 @@
   <div id="formCalendario">
     <form action="">
         <h1 id="titulo">Añadir al calendario</h1>
-        <button type="button" id="evento" onclick="formEvento()">Evento</button>
-        <button type="button" id="tarea">Tarea</button>
-        <button type="button" id="cumple">Cumpleaños</button>
+        <div id="botones">
+          <button type="button" id="eventoBtn" onclick="formEvento()">Evento</button>
+          <button type="button" id="tareaBtn" onclick="formTarea()">Tarea</button>
+          <button type="button" id="cumpleBtn" onclick="formCumple()">Cumpleaños</button>
+        </div>
+        
+        <button onclick="showFormCalendar()" id="cerrar">x</button>
     </form>
   </div>
 </body>
