@@ -149,11 +149,11 @@ let tarea = false;
 let cumple = false;
 
 function formEvento(){
-    if(tarea == true || cumple == true){
+    evento = !evento;
+    /*if(tarea == true || cumple == true){
         eliminarTarea()
         eliminarCumple()
-    }
-    evento = !evento;
+    }*/
     tarea=false;
     cumple=false;
     if(evento == true && tarea == false && cumple == false){
@@ -183,11 +183,11 @@ function formEvento(){
     
 }
 function formTarea(){
-    if(evento == true || cumple == true){
+    tarea = !tarea;
+    /*if(evento == true || cumple == true){
         eliminarEvento();
         eliminarCumple();
-    }
-    tarea = !tarea;
+    }*/
     evento=false;
     cumple=false;
     if(tarea == true && evento == false && cumple == false){
@@ -208,11 +208,12 @@ function formTarea(){
     
 }
 function formCumple(){
-    if(evento == true || tarea == true){
+    cumple = !cumple;
+    /*if(evento == true || tarea == true){
         eliminarEvento();
         eliminarTarea();
-    }
-    cumple = !cumple;
+    }*/
+    
     evento=false;
     tarea=false;
     if(cumple == true && evento == false && tarea == false){
