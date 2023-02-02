@@ -55,7 +55,7 @@
 
     /** Dropdown menu*/
     /*Con esto hacemos que los links no tengan linea abajo*/
-    li a {color : var(--colorLetra); text-decoration: none !important;}
+    li a {color : black;font-size: 18px; text-decoration: none !important;}
     li a:hover{ color: black}
     /*Le damos un ancho al dropdown*/
     nav {
@@ -91,6 +91,7 @@
     }
 
     .slide li {
+        width: 105%;
         padding : 20px; 
         list-style: none !important;
         background-color: var(--colorMenu);
@@ -171,7 +172,7 @@
         content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: var(--colorEventos); /* Change the color */
         font-weight: bold; /* If you want it to be bold */
-        font-size: 30px;
+        font-size: 40px;
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 1em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -180,7 +181,7 @@
         content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: var(--colorTareas); /* Change the color */
         font-weight: bold; /* If you want it to be bold */
-        font-size: 10px;
+        font-size: 15px;
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 1em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -189,7 +190,7 @@
         content: url("../img/candle.png");  /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: var(--colorTareas); /* Change the color */
         font-weight: bold; /* If you want it to be bold */
-        font-size: 10px;
+        font-size: 30px;
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 2em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -256,7 +257,7 @@
     /*Le damos bonita forma al menu desplegable*/
     .action ul li {
         list-style:none;
-         text-decoration: none;
+        text-decoration: none;
         display: flex;
         justify-content: flex-start;
         align-items: center;

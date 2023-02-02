@@ -1,15 +1,20 @@
 onload = principal;
 
+const mes = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Dicimebre']
+
 function principal() {
     let x = document.getElementById("formCalendario");
     x.style.display = "none";
     const fecha = new Date();
-    const mesActual = fecha.getMonth() + 1;
-    document.getElementById('mes').innerHTML = mesToString(mesActual)
+    const mesActual = mes[fecha.getMonth()];
+    document.getElementById('mes').innerHTML = mesActual
     diaSemana(fecha.getDay(), fecha.getDate())
+    fecha.setDate(fecha.getDate()-1)
+    console.log(fecha)
 }
 
 function diaSemana(diaSem, diaAct) {
+    console.log(diaAct-1)
     switch (diaSem) {
         case 0://Domingo
             document.getElementById('domingo').innerHTML = diaAct;
@@ -75,50 +80,6 @@ function diaSemana(diaSem, diaAct) {
             document.getElementById('domingo').innerHTML = diaAct + 1
             break;
     }
-}
-
-function mesToString(mes) {
-    let month = ""
-    switch (mes) {
-        case 1:
-            month = 'Enero';
-            break;
-        case 2:
-            month = 'Febrero';
-            break;
-        case 3:
-            month = 'Marzo';
-            break;
-        case 4:
-            month = 'Abril';
-            break;
-        case 5:
-            month = 'Mayo';
-            break;
-        case 6:
-            month = 'Junio';
-            break;
-        case 7:
-            month = 'Julio';
-            break;
-        case 8:
-            month = 'Agosto';
-            break;
-        case 9:
-            month = 'Septiembre';
-            break;
-        case 10:
-            month = 'Octubre';
-            break;
-        case 11:
-            month = 'Noviembre';
-            break;
-        case 12:
-            month = 'Dicimebre'
-            break;
-    }
-
-    return month;
 }
 
 function actionToggle() {

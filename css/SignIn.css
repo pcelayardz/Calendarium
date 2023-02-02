@@ -29,9 +29,6 @@
     color: var(--colorLetra);
 }
 @media (min-width:767px) {
-    a{
-        text-decoration: none !important;
-      }
     .header {
         display: grid;
         grid-template-columns: 1fr 5fr;
@@ -57,7 +54,10 @@
 }
 
 /** MAIN */
-
+a{
+    color: black;
+    text-decoration-color: #87B297 !important;
+}
 .principal {
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
@@ -170,6 +170,17 @@ input[type=submit] {
         background-color: var(--colorHeader);
         color: white;
         margin: 5% auto 10% auto;
+    }
+
+    .frase4 {
+        font-family: var(--roboto);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    a{
+        color: black !important; 
+        text-decoration-color: #87B297 !important;
     }
     
 }
