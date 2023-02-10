@@ -2,6 +2,7 @@ onload = principal;
 
 const mes = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Dicimebre']
 
+
 function principal() {
     let x = document.getElementById("formCalendario");
     x.style.display = "none";
@@ -12,6 +13,13 @@ function principal() {
     fecha.setDate(fecha.getDate()-1)
     console.log(fecha)
 }
+
+// const diasSemana = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
+
+// for (let i = 0; i < diasSemana.length; i++) {
+//     let dia = (diaAct + i - diaSem + diasSemana.length) % diasSemana.length;
+//     document.getElementById(diasSemana[i]).innerHTML = dia;
+// }
 
 function diaSemana(diaSem, diaAct) {
     console.log(diaAct-1)
