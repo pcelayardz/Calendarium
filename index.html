@@ -14,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-  <script src="js/index.js"></script>
   <title>Calendarium</title>
 </head>
 
@@ -26,7 +25,7 @@
   </header>
   <nav id="navegacion">
     <!-- El for indica que pertenece a un input en concreto-->
-    <label for="touch"><span class="menu"></span></label>
+    <label for="touch" ><span class="menu"></span></label>
     <input type="checkbox" id="touch">
     <ul class="slide">
       <li><a href="mensual.html" id="vm">Vista mensual</a></li>
@@ -36,56 +35,61 @@
 
   <main id="principal">
     <h1 id="mes"></h1>
-    <table id="semanal">
+    <div class="table-wrapper">
+      <table id="semanal">
+        <tr>
+          <th>Lunes <span id="lunes"></span></th>
+          <th>Martes <span id="martes"></span></th>
+          <th>Miercoles <span id="miercoles"></span></th>
+          <th>Jueves <span id="jueves"></span></th>
+          <th>Viernes <span id="viernes"></span></th>
+          <th>Sabado <span id="sabado"></span></th>
+          <th>Domingo <span id="domingo"></span></th>
+      </tr>
       <tr>
-        <th>Lunes <span id="lunes"></span></th>
-        <th>Martes <span id="martes"></span></th>
-        <th>Miercoles <span id="miercoles"></span></th>
-        <th>Jueves <span id="jueves"></span></th>
-        <th>Viernes <span id="viernes"></span></th>
-        <th>Sabado <span id="sabado"></span></th>
-        <th>Domingo <span id="domingo"></span></th>
-    </tr>
-    <tr>
-      <td id="lunesTd">
-        <ul>
-          <li id="evento"><span>Dentista 8:30</span></li>
-          <li id="tarea">Ejercicios 2 y 3</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li id="cumple">Perla</li>
-        </ul>
-      </td>
-      <td><ul></ul></td>
-      <td><ul></ul></td>
-      <td><ul></ul></td>
-      <td><ul></ul></td>
-      <td><ul></ul></td>
-    </tr>
-    </table>
-
-    <table id="horario">
+        <td id="lunesTd">
+          <ul>
+            <li id="evento"><span>Dentista 8:30</span></li>
+            <li id="tarea">Ejercicios 2 y 3</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li id="cumple">Perla</li>
+          </ul>
+        </td>
+        <td><ul></ul></td>
+        <td><ul></ul></td>
+        <td><ul></ul></td>
+        <td><ul></ul></td>
+        <td><ul></ul></td>
+      </tr>
+      </table>
+    </div>
+    
+    <div class="table-wrapper">
+      <table id="horario">
+        <tr>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miercoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sabado</th>
+          <th>Domingo</th>
+      </tr>
       <tr>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miercoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-        <th>Sabado</th>
-        <th>Domingo</th>
-    </tr>
-    <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-    </tr>
-    </table>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      </table>
+    </div>
+    
 
     <div class="action" onclick="actionToggle();">
       <span>+</span>
@@ -116,7 +120,8 @@
   </div>
 
   -->
-  
+  <script src="js/jquery-3.6.1.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
