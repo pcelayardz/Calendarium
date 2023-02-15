@@ -73,6 +73,7 @@ nav {
     position: absolute;
     right: 0px;
     top: 9%;
+    z-index: 1;
 }
 
 label {

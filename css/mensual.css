@@ -150,7 +150,7 @@ label {
 
 /*Moviles*/
 @media (max-width:480px) {
-    #header{
+    #header {
         height: 100px;
     }
 
@@ -159,6 +159,7 @@ label {
         font-size: 15px;
         margin-left: 72%;
     }
+
     .imagenHeader {
         visibility: hidden;
     }
@@ -172,12 +173,74 @@ label {
         font-weight: 100;
         color: var(--colorLetra);
     }
-    .menu{
+
+    .menu {
         background-position: 80% -20%;
-        background-size: 30px ;
+        background-size: 30px;
     }
 }
 
 
 
 /** MAIN **/
+#month-year {
+    color: var(--colorMes);
+    font-family: var(--ConcertOne);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+}
+
+td {
+    height: 100px;
+}
+
+th {
+    background-color: var(--colorHeader);
+}
+
+.diaActual {
+    background-color: var(--colorMenu);
+}
+
+@media (max-width:992px) and (min-width:767px) {
+
+    th,
+    td {
+        width: 100px;
+    }
+
+}
+
+@media (max-width:768px) and (min-width:480px) {
+    th,
+    td {
+        width: 85px;
+    }
+}
+
+@media (max-width:480px) {
+    th,
+    td {
+        width: 50px;
+    }
+    td{
+        height: 50px;
+    }
+    #month-year {
+        font-size: 45px;
+    }
+}

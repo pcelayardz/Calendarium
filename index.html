@@ -25,7 +25,7 @@
   </header>
   <nav id="navegacion">
     <!-- El for indica que pertenece a un input en concreto-->
-    <label for="touch" ><span class="menu"></span></label>
+    <label for="touch"><span class="menu"></span></label>
     <input type="checkbox" id="touch">
     <ul class="slide">
       <li><a href="mensual.html" id="vm">Vista mensual</a></li>
@@ -45,28 +45,38 @@
           <th>Viernes <span id="viernes"></span></th>
           <th>Sabado <span id="sabado"></span></th>
           <th>Domingo <span id="domingo"></span></th>
-      </tr>
-      <tr>
-        <td id="lunesTd">
-          <ul>
-            <li id="evento"><span>Dentista 8:30</span></li>
-            <li id="tarea">Ejercicios 2 y 3</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li id="cumple">Perla</li>
-          </ul>
-        </td>
-        <td><ul></ul></td>
-        <td><ul></ul></td>
-        <td><ul></ul></td>
-        <td><ul></ul></td>
-        <td><ul></ul></td>
-      </tr>
+        </tr>
+        <tr>
+          <td id="lunesTd">
+            <ul>
+              <li id="evento"><span>Dentista 8:30</span></li>
+              <li id="tarea">Ejercicios 2 y 3</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li id="cumple">Perla</li>
+            </ul>
+          </td>
+          <td>
+            <ul></ul>
+          </td>
+          <td>
+            <ul></ul>
+          </td>
+          <td>
+            <ul></ul>
+          </td>
+          <td>
+            <ul></ul>
+          </td>
+          <td>
+            <ul></ul>
+          </td>
+        </tr>
       </table>
     </div>
-    
+
     <div class="table-wrapper">
       <table id="horario">
         <tr>
@@ -77,19 +87,19 @@
           <th>Viernes</th>
           <th>Sabado</th>
           <th>Domingo</th>
-      </tr>
-      <tr>
-       <td></td>
-       <td></td>
-       <td></td>
-       <td></td>
-       <td></td>
-       <td></td>
-       <td></td>
-      </tr>
+        </tr>
+        <tr>
+          <td>8:00 Interfaces</td>
+          <td rowspan="3">8:00 Despliegue</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </table>
     </div>
-    
+
 
     <div class="action" onclick="actionToggle();">
       <span>+</span>
@@ -102,13 +112,13 @@
 
   <div id="formCalendario">
     <form action="">
-        <h1 id="titulo">Añadir al calendario</h1>
-        <div id="botones">
-          <button type="button" id="eventoBtn" onclick="formEvento()">Evento</button>
-          <button type="button" id="tareaBtn" onclick="formTarea()">Tarea</button>
-          <button type="button" id="cumpleBtn" onclick="formCumple()">Cumpleaños</button>
-        </div> 
-        <button onclick="showFormCalendar()" id="cerrar">x</button>
+      <h1 id="titulo">Añadir al calendario</h1>
+      <div id="botones">
+        <button type="button" id="eventoBtn" onclick="formEvento()">Evento</button>
+        <button type="button" id="tareaBtn" onclick="formTarea()">Tarea</button>
+        <button type="button" id="cumpleBtn" onclick="formCumple()">Cumpleaños</button>
+      </div>
+      <button onclick="showFormCalendar()" id="cerrar">x</button>
     </form>
   </div>
   <!-- 
