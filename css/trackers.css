@@ -181,3 +181,7 @@ label {
 
 
 /** MAIN **/
+
+.card{
+    height: 400px;
+}
